@@ -14,8 +14,11 @@ class ProgramStudi:
         self.namaProdi = a
     def setKodeProdi(self, a):
         self.kodeProdi = a
-    def addCourse(self, a):
-        self.listCourse.append(a)
+    def addCourse(self, nm, sks):
+        temp = Course()
+        temp.setNamaMatkul(nm)
+        temp.setJumlahSKS(sks)
+        self.listCourse.append(temp)
 
     def getNamaProdi(self):
         return self.namaProdi
